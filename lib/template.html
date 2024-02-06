@@ -123,7 +123,7 @@
 {% endif %}
 
 <script type="application/ld+json">
-  {{ seo_tag.json_ld | jsonify }}
+  {{ seo_tag.json_ld  | jsonify | replace:'.html','' }}
 </script>
 
 <!-- End Jekyll SEO tag -->
